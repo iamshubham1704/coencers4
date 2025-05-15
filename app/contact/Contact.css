@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.contact-page {
+  background: linear-gradient(90deg, #060606 0%, #610084 100%);
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+}
+
+.contact-card {
+  background-color: #181818;
+  border: 1px solid #999;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.contact-card h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #d2d2d2;
+}
+
+.contact-card p {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  color: #f1f1f1;
+}
+
+.contact-card a {
+  color: #379fff;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}

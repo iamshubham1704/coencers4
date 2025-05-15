@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Josefin+Sans&display=swap');
+
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background: linear-gradient(90deg, #060606 0%, #610084 100%);
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hero-title {
+  font-family: var(--font-josefin), sans-serif;
+  font-size: clamp(2rem, 5vw, 2.8rem); 
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.highlight {
+  color: #ff00cc;
+  font-weight: 700;
+  text-shadow: 0 0 8px #ff00cc88;
+}
+
+.hero-subtitle {
+  font-family: var(--font-inknut), serif;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: #cfcfcf;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap; 
+}
+
+.try-btn,
+.contact-btn {
+  padding: 0.6rem 1.6rem; 
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 120px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgb(255 0 204 / 0.3);
+}
+
+.try-btn {
+  background: #ff00cc;
+  color: white;
+}
+
+.try-btn:hover,
+.try-btn:focus {
+  background: #e600b8;
+  transform: scale(1.05);
+  outline: none;
+  box-shadow: 0 6px 10px rgb(230 0 184 / 0.6);
+}
+
+.contact-btn {
+  background: linear-gradient(145deg, #2d002f, #5b0f79);
+  color: white;
+  box-shadow: 0 4px 6px rgb(91 15 121 / 0.4);
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+  background: #441260;
+  transform: scale(1.05);
+  outline: none;
+  box-shadow: 0 6px 10px rgb(68 18 96 / 0.6);
+}
+
+.additional {
+  background-color: #f9f5f5;
+  padding: 3rem 2rem 4rem;
+  border-radius: 15px 15px 0 0;
+  margin-top: -2rem;
+  font-family: 'Inknut Antiqua', serif;
+  color: #222;
+}
+
+.working {
+  background: #fff;
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgb(0 0 0 / 0.1);
+  max-width: 850px;
+  margin: 0 auto 3rem;
+  font-size: 1.18rem;
+  line-height: 1.65;
+  transition: box-shadow 0.3s ease;
+}
+
+.working:hover {
+  box-shadow: 0 10px 25px rgb(0 0 0 / 0.15);
+}
+
+.working h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+  color: #000;
+}
+
+.highlight {
+  color: #d900ff;
+  text-shadow: 0 0 6px #d900ff88;
+}
+
+.offer-heading {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.2rem);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.offer-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap; 
+}
+
+.card {
+  position: relative;
+  width: 200px;
+  height: 240px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.07);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card-img {
+  object-fit: cover;
+  filter: brightness(1);
+  transition: filter 0.3s ease;
+}
+
+.card:hover .card-img {
+  filter: brightness(0.4);
+}
+
+.card-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 1rem;
+}
+
+.card:hover .card-text {
+  opacity: 1;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
