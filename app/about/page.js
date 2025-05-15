@@ -19,7 +19,7 @@ const About = () => {
       </div>
 
       <div className="team">
-        <h2>Meet the Brains Behind Conecers!!</h2>
+        <h2>Meet the Brains Behind Coencers!!</h2>
 
         {/* Founder Row */}
         <div className="team-row center">
