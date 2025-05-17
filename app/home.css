@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Josefin+Sans&display=swap');
 
+.separation {
+  height: 2px;
+  width: 80%;
+  background: purple;
+  border-radius: 4px;
+}
+
 .hero {
   text-align: center;
   padding: 100px 20px 60px;
@@ -11,7 +18,7 @@
 
 .hero-title {
   font-family: var(--font-josefin), sans-serif;
-  font-size: clamp(2rem, 5vw, 2.8rem); 
+  font-size: clamp(2rem, 5vw, 2.8rem);
   font-weight: 700;
   letter-spacing: 2px;
   margin-bottom: 1rem;
@@ -39,12 +46,12 @@
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .try-btn,
 .contact-btn {
-  padding: 0.6rem 1.6rem; 
+  padding: 0.6rem 1.6rem;
   font-size: 1rem;
   border: none;
   border-radius: 8px;
@@ -133,60 +140,254 @@
 .offer-cards {
   display: flex;
   justify-content: center;
-  gap: 2.5rem;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 1rem;
 }
 
 .card {
-  position: relative;
-  width: 200px;
-  height: 240px;
-  border-radius: 12px;
-  overflow: hidden;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgb(0 0 0 / 0.07);
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 280px;
+  text-align: center;
+  color: #343434;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-5px);
 }
 
-.card-img {
-  object-fit: cover;
-  filter: brightness(1);
-  transition: filter 0.3s ease;
+.icon {
+  font-size: 2.5rem;
+  color: #00d1ff;
+  /* Neon blue */
+  margin-bottom: 1rem;
 }
 
-.card:hover .card-img {
-  filter: brightness(0.4);
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
 }
 
-.card-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 1rem;
-  color: #fff;
+.description {
+  font-size: 0.95rem;
+  color: #272222;
+  margin-bottom: 1.2rem;
+}
+
+.learn-more {
+  color: #b37af9;
   font-weight: 600;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  padding: 1rem;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-.card:hover .card-text {
-  opacity: 1;
+.learn-more:hover {
+  color: #0ff;
 }
 
 
 
 html {
   scroll-behavior: smooth;
+}
+
+.case-study {
+  padding: 4rem 1rem;
+  background-color: #f9f5f5;
+  color: rgb(33, 32, 32);
+  text-align: center;
+}
+
+.case-study-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+
+.case-study-subtitle {
+  font-size: 1rem;
+  color: #1d1818;
+  margin-bottom: 2rem;
+}
+
+.case-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.case-card {
+  background-color: #efecf1;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 280px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.case-card:hover {
+  transform: translateY(-5px);
+}
+
+.case-card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #211b1b;
+}
+
+.case-card-description {
+  font-size: 0.95rem;
+  color: #646161;
+  margin-bottom: 1rem;
+}
+
+.case-learn-more {
+  color: #ba88f1;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.case-learn-more:hover {
+  color: #2b213b;
+}
+
+.top-influencers {
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #1c032e, #36034b);
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.top-influencers h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.top-influencers h1 span {
+  color: #e100ff;
+}
+
+.influencer-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.influencer-card {
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 220px;
+  box-shadow: 0 0 10px rgba(225, 0, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.influencer-card:hover {
+  transform: translateY(-5px);
+}
+
+.influencer-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.influencer-card h3 {
+  margin: 1rem 0 0.2rem;
+  font-size: 1.2rem;
+}
+
+.influencer-card .followers {
+  font-weight: bold;
+  color: #e100ff;
+}
+
+.brands-collaboration {
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #1c032e, #36034b);
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.brands-collaboration h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.brands-collaboration .highlight {
+  color: #e100ff;
+}
+
+.brands-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+.brand-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(225, 0, 255, 0.15);
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-card img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.ready-to-collaborate {
+  background-color: #efecf1;
+  color: rgb(38, 30, 30);
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  border-top: 2px solid #e100ff;
+}
+
+.ready-to-collaborate h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.ready-to-collaborate p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.ready-to-collaborate button {
+  background-color: #e100ff;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.ready-to-collaborate button:hover {
+  background-color: #c400e6;
 }
