@@ -1,21 +1,22 @@
 .footer {
-  background: linear-gradient(to right, #1c032e, #36034b);
-  color: white;
+  background-color: #f9fafb;
+  color: #1f2937;
   padding: 2rem 1rem;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
-  border-top: 2px solid #e100ff;
-  border-radius: 24px 24px 0 0;
+  font-family: 'Inter', sans-serif;
+  border-top: 1px solid #e5e7eb;
 }
 
 .footer-content h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-bottom: 0.5rem;
-  color: #e100ff;
+  color: #1d4ed8; /* Professional blue tone */
 }
 
 .footer-content p {
   margin: 0.3rem 0;
+  color: #4b5563;
+  font-size: 0.95rem;
 }
 
 .footer-links {
@@ -23,15 +24,16 @@
 }
 
 .footer-links a {
-  margin: 0 0.7rem;
-  color: #fff;
+  margin: 0 0.75rem;
+  color: #1f2937;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-  color: #e100ff;
+  color: #1d4ed8;
 }
 
 @media screen and (max-width: 600px) {

@@ -2,27 +2,49 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.2rem 2rem;
-  background: linear-gradient(90deg, #060606 0%, #610084 100%);
-  color: white;
+  padding: 1rem 2rem;
+  background: #ffffff;
+  color: #1a1a1a;
   position: sticky;
   top: 0;
   z-index: 100;
-  border-bottom: 2px solid #e100ff;
-  border-radius: 24px 24px 0 0;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 .left {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
   flex: 1;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #2563eb; /* professional blue */
+  font-weight: 700;
+  font-size: 1.3rem;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.logoLink:hover {
+  color: #1e40af; /* darker blue on hover */
+}
+
+.logoImage {
+  border-radius: 6px;
+  object-fit: contain;
 }
 
 .brandName {
   font-size: 1.5rem;
-  font-weight: bold;
-  color: #ff33cc;
+  font-weight: 700;
+  color: var(--primary); /* Use: #1d4ed8 or your theme primary */
 }
 
 .center {
@@ -34,13 +56,14 @@
 
 .center a {
   text-decoration: none;
-  color: white;
+  color: #333;
   font-weight: 500;
+  font-size: 1rem;
   transition: color 0.3s ease;
 }
 
 .center a:hover {
-  color: #ff33cc;
+  color: var(--primary); /* Use your consistent theme primary */
 }
 
 .right {
@@ -50,16 +73,17 @@
 }
 
 .loginBtn {
-  background: #ff33cc;
+  background: var(--primary); /* Use: #1d4ed8 */
   color: white;
   border: none;
-  padding: 0.4rem 1rem;
-  border-radius: 5px;
+  padding: 0.45rem 1.2rem;
+  border-radius: 6px;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 0.95rem;
   transition: background 0.3s ease;
 }
 
 .loginBtn:hover {
-  background: #e600b8;
+  background: #174bbd; /* Slightly darker variant of primary */
 }

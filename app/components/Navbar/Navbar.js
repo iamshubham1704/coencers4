@@ -7,13 +7,18 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.left}>
-        <Link href="/"><Image
-          src="/coencers.png"
-          alt="Coencers Logo"
-          width={50}
-          height={40}
-        /></Link>
+        <Link href="/" className={styles.logoLink}>
+          <Image
+            src="/coencers.jpg"
+            alt="Coencers Logo"
+            width={50}
+            height={40}
+            className={styles.logoImage}
+          />
+          <span className={styles.brandName}>COENCERS</span>
+        </Link>
       </div>
+
 
       <div className={styles.center}>
         <a href="/">Home</a>

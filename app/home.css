@@ -1,140 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Josefin+Sans&family=Poppins&display=swap');
 
-.separation {
-  height: 2px;
-  width: 80%;
-  background: purple;
-  border-radius: 4px;
+/* Root Variables */
+:root {
+  --primary: #004080;              /* Navy blue */
+  --primary-dark: #003060;
+  --background: #f4f7fa;
+  --card-background: #ffffff;
+  --text-color: #1f1f1f;
+  --muted-text: #666666;
+  --font-josefin: 'Josefin Sans', sans-serif;
+  --font-inknut: 'Inknut Antiqua', serif;
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+/* Global */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-poppins);
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
+/* Hero Section */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  min-height: 70vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #111827;
 }
 
 .hero {
-  text-align: center;
-  padding: 100px 20px 60px;
-  background: linear-gradient(90deg, #060606 0%, #610084 100%);
-  color: white;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  flex: 1;
+  max-width: 50%;
 }
 
 .hero-title {
-  font-family: var(--font-josefin), sans-serif;
-  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-size: 3.5rem;
   font-weight: 700;
-  letter-spacing: 2px;
   margin-bottom: 1rem;
-  line-height: 1.1;
+  color: #1f2937; /* Dark slate */
 }
 
 .highlight {
-  color: #ff00cc;
-  font-weight: 700;
-  text-shadow: 0 0 8px #ff00cc88;
+  color: #2563eb; /* professional blue */
 }
+
 
 .hero-subtitle {
-  font-family: var(--font-inknut), serif;
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
-  color: #cfcfcf;
-  margin-bottom: 2rem;
+  font-size: 1.25rem;
   line-height: 1.6;
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 2rem;
+  color: #4b5563; /* grayish */
 }
 
-.hero-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.try-btn,
-.contact-btn {
-  padding: 0.6rem 1.6rem;
-  font-size: 1rem;
-  border: none;
+.hero-buttons button {
+  padding: 0.75rem 1.5rem;
+  margin-right: 1rem;
   border-radius: 8px;
   font-weight: 600;
+  border: none;
   cursor: pointer;
-  min-width: 120px;
-  transition: background 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 6px rgb(255 0 204 / 0.3);
+  transition: background-color 0.3s ease;
 }
 
 .try-btn {
-  background: #ff00cc;
+  background-color: #2563eb;
   color: white;
 }
 
-.try-btn:hover,
-.try-btn:focus {
-  background: #e600b8;
-  transform: scale(1.05);
-  outline: none;
-  box-shadow: 0 6px 10px rgb(230 0 184 / 0.6);
+.try-btn:hover {
+  background-color: #1e40af;
 }
 
 .contact-btn {
-  background: linear-gradient(145deg, #2d002f, #5b0f79);
+  background-color: #2563eb;
   color: white;
-  box-shadow: 0 4px 6px rgb(91 15 121 / 0.4);
+  border: 2px solid #2563eb;
 }
 
-.contact-btn:hover,
-.contact-btn:focus {
-  background: #441260;
-  transform: scale(1.05);
-  outline: none;
-  box-shadow: 0 6px 10px rgb(68 18 96 / 0.6);
+.contact-btn:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+.sphere-container {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* adjust depending on your Sphere size */
+}
+
+/* Section Layouts */
+.additional,
+.working,
+.offer-cards,
+.case-study,
+.top-influencers,
+.brands-collaboration,
+.ready-to-collaborate {
+  padding: 3rem 1rem;
 }
 
 .additional {
-  background-color: #f9f5f5;
-  padding: 3rem 2rem 4rem;
-  border-radius: 15px 15px 0 0;
-  margin-top: -2rem;
-  font-family: 'Inknut Antiqua', serif;
-  color: #222;
+  background-color: #ffffff;
 }
 
 .working {
-  background: #fff;
-  padding: 2.5rem 3rem;
+  background-color: var(--card-background);
   border-radius: 12px;
-  box-shadow: 0 6px 18px rgb(0 0 0 / 0.1);
   max-width: 850px;
-  margin: 0 auto 3rem;
-  font-size: 1.18rem;
-  line-height: 1.65;
-  transition: box-shadow 0.3s ease;
-}
-
-.working:hover {
-  box-shadow: 0 10px 25px rgb(0 0 0 / 0.15);
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .working h2 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
+  font-family: var(--font-josefin);
   font-size: 1.5rem;
-  margin-bottom: 1.2rem;
-  color: #000;
+  margin-bottom: 1rem;
+  color: var(--primary);
 }
 
-.highlight {
-  color: #d900ff;
-  text-shadow: 0 0 6px #d900ff88;
-}
-
+/* Offer Cards */
 .offer-heading {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: clamp(1.8rem, 4vw, 2.2rem);
-  font-weight: 700;
+  font-family: var(--font-josefin);
+  font-size: 2rem;
+  font-weight: 600;
   text-align: center;
-  margin-bottom: 2.5rem;
-  color: #000;
-  letter-spacing: 1px;
+  margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .offer-cards {
@@ -142,77 +148,57 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 3rem 1rem;
 }
 
 .card {
-  background-color: #ffffff;
+  background-color: var(--card-background);
   padding: 2rem;
-  border-radius: 20px;
+  border-radius: 12px;
   width: 280px;
   text-align: center;
-  color: #343434;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
 .icon {
-  font-size: 2.5rem;
-  color: #00d1ff;
-  /* Neon blue */
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
 }
 
 .title {
   font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 .description {
+  color: var(--muted-text);
   font-size: 0.95rem;
-  color: #272222;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .learn-more {
-  color: #b37af9;
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.3s;
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: 500;
 }
 
-.learn-more:hover {
-  color: #0ff;
-}
-
-
-
-html {
-  scroll-behavior: smooth;
-}
-
+/* Case Study */
 .case-study {
-  padding: 4rem 1rem;
-  background-color: #f9f5f5;
-  color: rgb(33, 32, 32);
+  background-color: #ffffff;
   text-align: center;
 }
 
 .case-study-title {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 2.2rem;
+  font-weight: 700;
   margin-bottom: 0.5rem;
+  color: var(--primary);
 }
-
 
 .case-study-subtitle {
   font-size: 1rem;
-  color: #1d1818;
+  color: var(--muted-text);
   margin-bottom: 2rem;
 }
 
@@ -224,129 +210,94 @@ html {
 }
 
 .case-card {
-  background-color: #efecf1;
-  padding: 2rem;
-  border-radius: 16px;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
   width: 280px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
   text-align: left;
 }
 
-.case-card:hover {
-  transform: translateY(-5px);
-}
-
 .case-card-title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 0.75rem;
-  color: #211b1b;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
 }
 
 .case-card-description {
-  font-size: 0.95rem;
-  color: #646161;
+  font-size: 0.9rem;
+  color: var(--muted-text);
   margin-bottom: 1rem;
 }
 
 .case-learn-more {
-  color: #ba88f1;
-  font-weight: 600;
-  text-decoration: none;
+  color: var(--primary);
+  text-decoration: underline;
 }
 
-.case-learn-more:hover {
-  color: #2b213b;
-}
-
-.top-influencers {
-  padding: 3rem 1rem;
-  background: linear-gradient(to right, #1c032e, #36034b);
-  color: white;
+/* Influencers & Brands */
+.top-influencers,
+.brands-collaboration {
+  background: white;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
 }
 
-.top-influencers h1 {
-  font-size: 2.5rem;
+.top-influencers h1,
+.brands-collaboration h1 {
+  font-size: 2rem;
   margin-bottom: 2rem;
-}
-
-.top-influencers h1 span {
-  color: #e100ff;
+  color: var(--primary);
 }
 
 .influencer-grid {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.5rem;
+  justify-content: center;
 }
 
 .influencer-card {
-  background: #fff;
-  color: #000;
-  border-radius: 20px;
-  padding: 1.5rem;
+  background: var(--card-background);
+  border-radius: 12px;
+  padding: 1rem;
   width: 220px;
-  box-shadow: 0 0 10px rgba(225, 0, 255, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.influencer-card:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .influencer-card img {
   width: 100%;
-  height: 200px;
-  border-radius: 15px;
+  height: 180px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .influencer-card h3 {
   margin: 1rem 0 0.2rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .influencer-card .followers {
-  font-weight: bold;
-  color: #e100ff;
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 0.95rem;
 }
 
-.brands-collaboration {
-  padding: 3rem 1rem;
-  background: linear-gradient(to right, #1c032e, #36034b);
-  color: white;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-}
-
-.brands-collaboration h1 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-
-.brands-collaboration .highlight {
-  color: #e100ff;
-}
-
+/* Brands Logos */
 .brands-logos {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  padding-top: 1rem;
+  justify-content: center;
 }
 
 .brand-card {
   background: white;
   padding: 1rem;
-  border-radius: 1rem;
-  box-shadow: 0 0 10px rgba(225, 0, 255, 0.15);
-  width: 120px;
-  height: 120px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  width: 100px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -358,36 +309,66 @@ html {
   object-fit: contain;
 }
 
+/* CTA Section */
 .ready-to-collaborate {
-  background-color: #efecf1;
-  color: rgb(38, 30, 30);
-  padding: 4rem 2rem;
+  background-color: #ffffff;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
-  border-top: 2px solid #e100ff;
+  border-top: 1px solid #ccc;
 }
 
 .ready-to-collaborate h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
+  color: var(--primary);
 }
 
 .ready-to-collaborate p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 2rem;
+  color: var(--muted-text);
 }
 
 .ready-to-collaborate button {
-  background-color: #e100ff;
+  background-color: var(--primary);
   color: white;
   border: none;
   padding: 0.8rem 2rem;
-  font-size: 1.1rem;
-  border-radius: 10px;
+  font-size: 1.05rem;
+  border-radius: 6px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 .ready-to-collaborate button:hover {
-  background-color: #c400e6;
+  background-color: var(--primary-dark);
+}
+
+/* Accessibility */
+a:focus,
+button:focus {
+  outline: 2px dashed var(--primary);
+  outline-offset: 4px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero {
+    padding: 60px 15px 40px;
+  }
+
+  .offer-cards,
+  .case-cards,
+  .influencer-grid {
+    gap: 1rem;
+  }
+
+  .hero-title,
+  .ready-to-collaborate h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle,
+  .ready-to-collaborate p {
+    font-size: 1rem;
+  }
 }

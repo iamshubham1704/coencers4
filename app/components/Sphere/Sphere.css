@@ -5,16 +5,16 @@
     height: 60vh;
     perspective: 1000px;
     position: relative;
-    background: linear-gradient(90deg, #060606 0%, #610084 100%);
-
+    background: linear-gradient(90deg, #f4f7fa 0%, #ffffff 100%);
 }
 
+/* Central Sphere */
 .sphere {
     position: absolute;
-    width: 250px;
-    height: 250px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
-    background: radial-gradient(circle at center, #d095f0, #610084);
+    background: radial-gradient(circle at center, #ffffff, #dce3ea);
     z-index: 1;
     top: 50%;
     left: 50%;
@@ -24,57 +24,75 @@
     justify-content: center;
     align-items: center;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
-    color: #f6f3f6;
-    text-shadow: 0 0 10px #ff00ff99;
+    color: var(--primary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     user-select: none;
+    text-shadow: none;
 }
 
-
+/* Orbit Animation Container */
 .orbit {
     position: absolute;
-    width: 250px;
-    height: 250px;
+    width: 240px;
+    height: 240px;
     top: 50%;
     left: 50%;
-    margin-left: -125px;
-    margin-top: -125px;
+    margin-left: -120px;
+    margin-top: -120px;
     transform-style: preserve-3d;
-    animation: rotate 12s linear infinite;
+    animation: rotate 14s linear infinite;
     z-index: 2;
 }
 
+/* Orbiting Icons */
 .orbit-icon {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     top: 50%;
     left: 50%;
-    margin-left: -20px;
-    margin-top: -20px;
+    margin-left: -18px;
+    margin-top: -18px;
+    background-color: #ffffff;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
 }
 
+.orbit-icon:hover {
+    transform: scale(1.15);
+    background-color: var(--primary);
+    color: white;
+}
+
+/* Positioning Orbiting Icons */
 .orbit-icon:nth-child(1) {
-    transform: rotateY(0deg) translateZ(125px);
+    transform: rotateY(0deg) translateZ(120px);
 }
 
 .orbit-icon:nth-child(2) {
-    transform: rotateY(72deg) translateZ(125px);
+    transform: rotateY(72deg) translateZ(120px);
 }
 
 .orbit-icon:nth-child(3) {
-    transform: rotateY(144deg) translateZ(125px);
+    transform: rotateY(144deg) translateZ(120px);
 }
 
 .orbit-icon:nth-child(4) {
-    transform: rotateY(216deg) translateZ(125px);
+    transform: rotateY(216deg) translateZ(120px);
 }
 
 .orbit-icon:nth-child(5) {
-    transform: rotateY(288deg) translateZ(125px);
+    transform: rotateY(288deg) translateZ(120px);
 }
 
+/* Rotation Animation */
 @keyframes rotate {
     0% {
         transform: rotateY(0deg);
