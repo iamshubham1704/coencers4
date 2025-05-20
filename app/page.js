@@ -1,8 +1,34 @@
+"use client"
 import Link from "next/link";
 import Sphere from "./components/Sphere/Sphere";
 import './home.css';
+import { useEffect } from "react";
 
 export default function Home() {
+
+  useEffect(() => {
+    (function (d, t) {
+      const v = d.createElement(t);
+      const s = d.getElementsByTagName(t)[0];
+      v.onload = function () {
+        if (window.voiceflow) {
+          window.voiceflow.chat.load({
+            verify: { projectID: "67f7790e95c558b7d60ae9c2" },
+            url: "https://general-runtime.voiceflow.com",
+            versionID: "production",
+            voice: {
+              url: "https://runtime-api.voiceflow.com",
+            },
+          });
+        }
+      };
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs";
+      v.type = "text/javascript";
+      s.parentNode.insertBefore(v, s);
+    })(document, "script");
+  }, []);
+
+
   const influencers = [
     { name: 'Anshul Upmaniyu', role: 'Lifestyle Influencer', followers: '150k' },
     { name: 'Aarav Sharma', role: 'Lifestyle Influencer', followers: '150k' },
