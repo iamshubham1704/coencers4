@@ -28,7 +28,7 @@ export default function Home() {
             An Emerging Agency revolutionizing deals between <br /> Brands and Influencers
           </p>
           <div className="hero-buttons">
-            <button className="try-btn">Try Now</button>
+            <Link href="https://forms.gle/y5HJCQk9LL7Q4C2s8"><button className="try-btn" >Try Now</button></Link>
             <Link href="/contact"><button className="contact-btn">Contact</button></Link>
           </div>
         </div>

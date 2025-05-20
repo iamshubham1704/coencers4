@@ -37,7 +37,7 @@ export default function Navbar() {
       </div>
 
       <div className={styles.right}>
-        <button className={styles.loginBtn}>Log In</button>
+        <Link href="https://forms.gle/y5HJCQk9LL7Q4C2s8"><button className={styles.loginBtn}>Log In</button></Link>
       </div>
     </nav>
   );
