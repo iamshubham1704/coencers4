@@ -2,7 +2,8 @@
 
 /* Root Variables */
 :root {
-  --primary: #004080;              /* Navy blue */
+  --primary: #004080;
+  /* Navy blue */
   --primary-dark: #003060;
   --background: #f4f7fa;
   --card-background: #ffffff;
@@ -49,11 +50,13 @@ body {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #1f2937; /* Dark slate */
+  color: #1f2937;
+  /* Dark slate */
 }
 
 .highlight {
-  color: #2563eb; /* professional blue */
+  color: #2563eb;
+  /* professional blue */
 }
 
 
@@ -61,7 +64,8 @@ body {
   font-size: 1.25rem;
   line-height: 1.6;
   margin-bottom: 2rem;
-  color: #4b5563; /* grayish */
+  color: #4b5563;
+  /* grayish */
 }
 
 .hero-buttons button {
@@ -100,7 +104,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px; /* adjust depending on your Sphere size */
+  height: 400px;
+  /* adjust depending on your Sphere size */
 }
 
 /* Section Layouts */
@@ -353,22 +358,100 @@ button:focus {
 /* Responsive */
 @media (max-width: 600px) {
   .hero {
-    padding: 60px 15px 40px;
+    padding: 1.5rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .sphere-wrapper {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Increased font sizes for better visibility */
+  .hero-title,
+  .ready-to-collaborate h2 {
+    font-size: 2.4rem;
+    line-height: 1.4;
+    font-weight: 700;
+  }
+
+  .hero-subtitle,
+  .ready-to-collaborate p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  .hero-buttons button {
+    font-size: 1.5rem;
+    padding: 0.6rem 1.2rem;
+    margin: 0 0.5rem;
+    margin-top: 1.2rem;
+  }
+
+  .try-btn,
+  .contact-btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    margin: 5px;
   }
 
   .offer-cards,
   .case-cards,
   .influencer-grid {
+    flex-direction: column;
+    align-items: center;
     gap: 1rem;
   }
 
-  .hero-title,
-  .ready-to-collaborate h2 {
-    font-size: 1.8rem;
+  .sphere-wrapper {
+    height: auto;
+    margin-top: 2rem;
   }
 
-  .hero-subtitle,
-  .ready-to-collaborate p {
-    font-size: 1rem;
+  .sphere {
+    width: 200px;
+    height: 200px;
+  }
+
+  .orbit {
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    margin-top: -100px;
+  }
+
+  .orbit-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .team-grid {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .team-member {
+    width: 100%;
   }
 }
