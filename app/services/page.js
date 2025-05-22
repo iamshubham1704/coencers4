@@ -4,7 +4,7 @@ import './services.css'; // You can create this for scoped styling
 const packages = [
   {
     tier: 'Starter Plan',
-    price: 'Contact for further details',
+    price: 'For further details - contact',
     color: 'green',
     perfectFor: 'Food stalls, new cafes, or budget-conscious businesses',
     includes: [
@@ -19,7 +19,7 @@ const packages = [
   },
   {
     tier: 'Growth Plan',
-    price: 'Contact for further details',
+    price: 'For further details - contact',
     color: 'blue',
     perfectFor: 'Mid-sized cafes or brands looking to boost footfall',
     includes: [
@@ -33,7 +33,7 @@ const packages = [
   },
   {
     tier: 'Premium Buzz Plan',
-    price: 'Contact for further details',
+    price: 'For further details - contact',
     color: 'red',
     perfectFor: 'Cafes launching a new outlet/menu or hosting events',
     includes: [
@@ -49,10 +49,10 @@ const packages = [
 ];
 
 const addons = [
-  { item: '📸 Professional Photography Session', price: '₹1,999' },
-  { item: '🎥 Reels Editing (Branded)', price: '₹999 per video' },
-  { item: '🎁 Influencer Food Hamper Coordination', price: '₹500' },
-  { item: '📝 Monthly Content Calendar', price: '₹2,499' },
+  { item: '📸 Professional Photography Session'},
+  { item: '🎥 Reels Editing (Branded)'},
+  { item: '🎁 Influencer Food Hamper Coordination'},
+  { item: '📝 Monthly Content Calendar' },
 ];
 
 const Services = () => {
