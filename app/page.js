@@ -29,54 +29,36 @@ export default function Home() {
 
   const influencers = [
     {
-      name: 'Anshul Uniyal',
-      role: 'Lifestyle Influencer',
-      followers: '250k',
-      image: '/anshul.jpg',
-      instagram: 'https://www.instagram.com/anshul_2707_?igsh=MTVic3diYTA4MHRjag=='
+      name: 'Mehak Modi',
+      role: 'Lifestyle, Fashion',
+      followers: '2.5k',
+      image: '/mehak.jpg',
+      instagram: 'https://www.instagram.com/i_mehakmodi/?igsh=aHU4cXVoYmRzd2F1&utm_source=qr#'
     },
     {
       name: 'Abhishek Solanki',
-      role: 'Lifestyle Influencer',
+      role: 'Lifestyle',
       followers: '2.7k',
       image: '/abhishek.jpg',
       instagram: 'https://www.instagram.com/abhishek.solankii?igsh=MWd2cWN3bWhlbnptMg=='
     },
     {
       name: 'Payal Solanki',
-      role: 'Lifestyle Influencer',
+      role: 'Lifestyle',
       followers: '1.5k',
       image: '/payal.jpg',
       instagram: 'https://www.instagram.com/payal_solanki03_?igsh=MW4yNzlzM3Z3dGF1aA=='
     },
     {
-      name: 'Food Vloger India',
-      role: 'Food Vlogger',
-      followers: '79.2k',
-      image: '/foodvlogerindia.jpg',
-      instagram: 'https://www.instagram.com/food_vlogger_india?igsh=MWF5dXllYXpjM2poZA=='
+      name: 'Saksham Batra',
+      role: 'Fitness, Travel, Lifestyle',
+      followers: '1k',
+      image: '/saksham.jpg',
+      instagram: 'https://www.instagram.com/saksham_batra?igsh=MXIxeTcxaXB4b2RxcQ=='
     },
-    {
-      name: 'food mehkma',
-      role: 'Food Vlogger',
-      followers: '338k',
-      image: '/foofmehkma.jpg',
-      instagram: 'https://www.instagram.com/food_mehkma?igsh=MXdjZGl4Y3NnZ2Z1Yw=='
-    },
-    {
-      name: 'Deepanshi Goel',
-      role: 'Food Vlogger',
-      followers: '119k',
-      image: '/deepanshi.jpg',
-      instagram: 'https://www.instagram.com/delhites_food_blogger?igsh=MTUzb3F6aXR0ZThncw=='
-    },
-    {
-      name: 'Foodie Says',
-      role: 'Food Vlogger',
-      followers: '49.9K',
-      image: '/foodie.jpg',
-      instagram: 'https://www.instagram.com/foodiee_says?igsh=NTluNTBkcTJrejRl'
-    }
+    
+     
+     
   ];
 
   const brands = [
