@@ -49,10 +49,10 @@ const packages = [
 ];
 
 const addons = [
-  { item: '📸 Professional Photography Session'},
-  { item: '🎥 Reels Editing (Branded)'},
-  { item: '🎁 Influencer Food Hamper Coordination'},
-  { item: '📝 Monthly Content Calendar' },
+  { item: '📸 Professional Photography Session', price: '₹1,999' },
+  { item: '🎥 Reels Editing (Branded)', price: '₹999 per video' },
+  { item: '🎁 Influencer Food Hamper Coordination', price: '₹500' },
+  { item: '📝 Monthly Content Calendar', price: '₹2,499' },
 ];
 
 const Services = () => {
@@ -66,7 +66,6 @@ const Services = () => {
         {packages.map((pkg, index) => (
           <div className={`package-card ${pkg.color}`} key={index}>
             <h2>{pkg.tier}</h2>
-            <p className="price">{pkg.price}</p>
             <p className="perfect-for">Perfect for: {pkg.perfectFor}</p>
             <ul className="includes">
               {pkg.includes.map((point, i) => (
@@ -74,6 +73,7 @@ const Services = () => {
               ))}
             </ul>
             <p className="goal">🎯 <strong>Goal:</strong> {pkg.goal}</p>
+            <p className="price">{pkg.price}</p>
           </div>
         ))}
       </div>
