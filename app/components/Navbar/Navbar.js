@@ -34,6 +34,7 @@ export default function Navbar() {
         <a href="/">Home</a>
         <a href="/reviews">Reviews</a>
         <a href="/about">About</a>
+        <a href="/services">Services</a>
       </div>
 
       <div className={styles.right}>
