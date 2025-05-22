@@ -4,7 +4,7 @@ import './services.css'; // You can create this for scoped styling
 const packages = [
   {
     tier: 'Starter Plan',
-    price: '₹4,999',
+    price: 'Contact for further details',
     color: 'green',
     perfectFor: 'Food stalls, new cafes, or budget-conscious businesses',
     includes: [
@@ -19,7 +19,7 @@ const packages = [
   },
   {
     tier: 'Growth Plan',
-    price: '₹8,999',
+    price: 'Contact for further details',
     color: 'blue',
     perfectFor: 'Mid-sized cafes or brands looking to boost footfall',
     includes: [
@@ -33,7 +33,7 @@ const packages = [
   },
   {
     tier: 'Premium Buzz Plan',
-    price: '₹19,999',
+    price: 'Contact for further details',
     color: 'red',
     perfectFor: 'Cafes launching a new outlet/menu or hosting events',
     includes: [
