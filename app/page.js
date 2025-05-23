@@ -275,7 +275,7 @@ export default function Home() {
       </section>
 
       {/* Brand Collaborations */}
-      <section className="brands-collaboration">
+      {/* <section className="brands-collaboration">
         <h1>
           Brands <span className="highlight">Associated With Us</span>
         </h1>
@@ -286,7 +286,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <section className="ready-to-collaborate">
