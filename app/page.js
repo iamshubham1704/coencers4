@@ -29,6 +29,13 @@ export default function Home() {
 
   const influencers = [
     {
+      name: 'Nikhil',
+      role: 'Food',
+      followers: '14.2k',
+      image: '/nikhil.jpg',
+      instagram: 'https://www.instagram.com/hamari.foodie.kismat?igsh=aG9yZ3FudTg3MzNz'
+    },
+    {
       name: 'Mehak Modi',
       role: 'Lifestyle, Fashion',
       followers: '2.5k',
@@ -43,7 +50,7 @@ export default function Home() {
       instagram: 'https://www.instagram.com/abhishek.solankii?igsh=MWd2cWN3bWhlbnptMg=='
     },
     {
-      name: 'Payal Solanki',
+      name: 'Payal',
       role: 'Lifestyle',
       followers: '1.5k',
       image: '/payal.jpg',

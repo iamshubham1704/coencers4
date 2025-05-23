@@ -59,7 +59,7 @@ const Services = () => {
   return (
     <section className="services-section">
       <h1 className="section-title">
-        <span className="highlight">Services</span>
+        <span className="highlight">Services For Brands</span>
       </h1>
 
       <div className="packages-grid">
