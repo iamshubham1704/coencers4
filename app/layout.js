@@ -25,7 +25,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${josefin.variable} ${inknut.variable}`}>
       <head>
-        {/* ✅ Google AdSense verification script */}
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8194256570622838"
@@ -35,6 +34,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         {children}
+        <Analytics/>
         <Footer />
       </body>
     </html>
