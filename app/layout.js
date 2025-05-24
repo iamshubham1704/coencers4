@@ -2,6 +2,7 @@ import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar'
 import './globals.css'
 import { Josefin_Sans, Inknut_Antiqua } from 'next/font/google'
+import { Analytics } from "@vercel/analytics/next"
 
 const josefin = Josefin_Sans({
   subsets: ['latin'],
