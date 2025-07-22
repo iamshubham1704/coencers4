@@ -4,24 +4,19 @@ import './reviews.css';
 
 const initialReviews = [
   {
-    name: 'Aarav Sharma (Influencer)',
+    name: 'Mehak Modi (Influencer)',
     stars: 5,
-    text: 'Coencers helped me land 3 brand deals in just a month. Great platform!',
+    text: 'Coencers helped me to land deal with fixderma.',
   },
   {
-    name: 'Ritika Verma (Company)',
+    name: 'Zeber (Company)',
     stars: 4,
-    text: 'We found talented influencers for our product launch. Seamless experience!',
+    text: 'Very Nice experience working with Coencers. We got a boost in number of clients and sales.',
   },
   {
-    name: 'Karan Mehta (Influencer)',
+    name: 'Sakasham Batra (Influencer)',
     stars: 5,
-    text: 'Loved the dashboard interface. Easy to navigate and respond to offers.',
-  },
-  {
-    name: 'Neha Gupta (Company)',
-    stars: 5,
-    text: 'Great support from the Coencers team. Will collaborate again soon.',
+    text: 'Helped me to deal with Avvatar India',
   },
 ];
 

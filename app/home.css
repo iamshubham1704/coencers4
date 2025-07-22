@@ -3,7 +3,6 @@
 /* Root Variables */
 :root {
   --primary: #004080;
-  /* Navy blue */
   --primary-dark: #003060;
   --background: #f4f7fa;
   --card-background: #ffffff;
@@ -14,7 +13,6 @@
   --font-poppins: 'Poppins', sans-serif;
 }
 
-/* Global */
 html {
   scroll-behavior: smooth;
 }
@@ -65,7 +63,6 @@ body {
   line-height: 1.6;
   margin-bottom: 2rem;
   color: #4b5563;
-  /* grayish */
 }
 
 .hero-buttons button {
@@ -105,10 +102,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 400px;
-  /* adjust depending on your Sphere size */
 }
 
-/* Section Layouts */
+
 .additional,
 .working,
 .offer-cards,
@@ -138,7 +134,6 @@ body {
   color: var(--primary);
 }
 
-/* Offer Cards */
 .offer-heading {
   font-family: var(--font-josefin);
   font-size: 2rem;
