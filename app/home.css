@@ -685,3 +685,48 @@ button:focus {
     margin-top: 1.5rem;
   }
 }
+
+
+.influencer-review-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.review-heading {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.review-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px 25px;
+  width: 260px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.influencer-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.collab-brand {
+  font-size: 16px;
+  color: #666;
+}

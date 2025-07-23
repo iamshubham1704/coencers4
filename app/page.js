@@ -63,9 +63,9 @@ export default function Home() {
       image: '/saksham.jpg',
       instagram: 'https://www.instagram.com/saksham_batra?igsh=MXIxeTcxaXB4b2RxcQ=='
     },
-    
-     
-     
+
+
+
   ];
 
   const brands = [
@@ -278,22 +278,52 @@ export default function Home() {
               <img src="/zeber.png" alt="ZeberAI Logo" />
             </div>
           </div>
+
+          <div className="case-row">
+            <div className="case-text">
+              <div className="case-category">Beauty Brand Awareness Campaign</div>
+              <h2 className="case-card-title">How Fixderma Transformed Engagement with Influencer Strategy</h2>
+              <p>
+                Fixderma, a dermatologist-recommended skincare brand, partnered with us to roll out an
+                influencer-driven campaign focused on real results and skin confidence. By collaborating with
+                trusted beauty creators and dermatologists, we highlighted the effectiveness of their core
+                products across Instagram, YouTube, and niche skincare communities.
+              </p>
+
+              {/* <ul className="case-results">
+                <li>Achieved 3M+ impressions within 2 weeks of launch</li>
+                <li>Grew social media following by 45% organically</li>
+                <li>Increased product inquiries by 70% via DMs and comments</li>
+              </ul> */}
+
+              <a href="https://www.fixderma.com" target="_blank" rel="noopener noreferrer" className="case-read-more">
+                View Campaign →
+              </a>
+            </div>
+
+            <div className="case-logo">
+              <img src="/fixderma_logo.svg" alt="Fixderma Logo" />
+            </div>
+          </div>
+
         </div>
       </section>
 
-      {/* Brand Collaborations */}
-      {/* <section className="brands-collaboration">
-        <h1>
-          Brands <span className="highlight">Associated With Us</span>
-        </h1>
-        <div className="brands-logos">
-          {brands.map((brand, index) => (
-            <div className="brand-card" key={index}>
-              <img src={brand.logo} alt={brand.name} />
-            </div>
-          ))}
+      <section className="influencer-review-section">
+        <h2 className="review-heading">Influencer Reviews</h2>
+        <div className="review-cards">
+          <div className="review-card">
+            <h3 className="influencer-name">Mehak Modi</h3>
+            <p className="collab-brand">Coencers helped me to land deal with fixderma.</p>
+          </div>
+          <div className="review-card">
+            <h3 className="influencer-name">Saksham Batra</h3>
+            <p className="collab-brand">Helped me to deal with Avvatar India</p>
+          </div>
         </div>
-      </section> */}
+      </section>
+
+
 
       {/* CTA */}
       <section className="ready-to-collaborate">
